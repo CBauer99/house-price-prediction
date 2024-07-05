@@ -39,4 +39,4 @@ for i in range(len(p1)):
 df = pd.DataFrame(combine, columns=columns)
 
 ## Export to csv
-df.to_csv('boston_housing.csv', index=False)
+df.to_csv(path, index=False)
