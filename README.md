@@ -3,7 +3,7 @@
 ## **Project Overview:**
 *Objective:*
 
-Model to predict house prices based on various features utilizing the Boston Housing Dataset 
+Model to predict house prices based on various features utilizing the ***Boston Housing Dataset***
 
   
 *Dataset:*  
