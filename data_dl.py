@@ -23,20 +23,16 @@ data_lines = lines[data_start:]
 ## Dataset in splint in two parts, we have to combine them
 p1 = []
 p2 = []
-
-for i in range(len(data_lines)):
-    if i < 77: ## Second line will never hit this len
-        p1.append(data_lines[i].strip().split())
-    else:
-        p2.append(data_lines[i].strip().split())
-
-## Combine the parts
 combine = []
-for i in range(len(p1)):
-        combine.append(p1[i] + p2[i])
+
+for i in range(0, len(data_lines) - 1, 2):
+     p1 = data_lines[i].strip().split()
+     p2 = data_lines[i + 1].strip().split()
+     combine.append(p1 + p2)
 
 ## Place data in DataFrame
 df = pd.DataFrame(combine, columns=columns)
 
 ## Export to csv
 df.to_csv(path, index=False)
+print(f"Data saved to {path}")
