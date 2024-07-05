@@ -25,7 +25,8 @@ p1 = []
 p2 = []
 combine = []
 
-for i in range(0, len(data_lines) - 1, 2):
+# PARSE DATA AS PAIRS RATHER THAN TRYING TO PARSE EACH "PART" BASED ON CHAR LEN
+for i in range(0, len(data_lines) - 1, 2): 
      p1 = data_lines[i].strip().split()
      p2 = data_lines[i + 1].strip().split()
      combine.append(p1 + p2)
