@@ -20,7 +20,7 @@ lines = data.split('\n')
 data_start = 22 ## LN 22 is where data starts
 data_lines = lines[data_start:]
 
-## Dataset in splint in two parts, we have to combine them
+## Dataset in split in two parts, we have to combine them
 p1 = []
 p2 = []
 combine = []
