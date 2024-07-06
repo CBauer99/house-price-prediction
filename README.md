@@ -1,6 +1,13 @@
-# **Predicting House Prices using Regression Analysis**
+# **Predicting House Prices using Regression Analysis** 
+This project involves predicting house prices in Boston using the Boston Housing dataset.
 
-## **Project Overview:**
+## Table of Contents
+- [Project Overview](#project-overview)
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Contact](#contact)
+## **Project Overview**
 *Objective:*
 
 Model to predict house prices based on various features utilizing the ***Boston Housing Dataset***
@@ -9,8 +16,9 @@ Model to predict house prices based on various features utilizing the ***Boston 
 *Dataset:*  
 The Boston house-price data of Harrison, D. and Rubinfeld, D.L. 'Hedonic prices and the demand for clean air', J. Environ. Economics & Management, vol.5, 81-102, 1978. Used in Belsley, Kuh & Welsch, 'Regression diagnostics
  ...', Wiley, 1980.   N.B. Various transformations are used in the table on
- pages 244-261 of the latter.
+ pages 244-261 of the latter. 
 
+Dataset retrieved from: https://lib.stat.cmu.edu/datasets/boston
   
 The dataset contains the following columns:
 - `CRIM`: per capita crime rate by town
@@ -50,3 +58,20 @@ The dataset contains the following columns:
 - [ ] Document process, findings, and insights in a structured report or Jupyter notebook.
 - [ ] Include visualizations (e.g., scatter plots, heatmaps) to illustrate relationships between variables.
 - [ ] Explain decisions and interpretations clearly to demonstrate your understanding.
+
+## Installation
+Clone the repository and install the necessary packages:
+```sh
+git clone https://github.com/cbauer99/house-price-prediction.git
+cd house-price-prediction
+pip install -r requirements.txt
+```
+## Usage
+Run the data download script to download and process the dataset:
+```sh
+python data_dl.py
+```
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
+## Contact 
+For any inquiries, please contact [Christopher Bauer](mailto:cbauer99@outlook.com)
